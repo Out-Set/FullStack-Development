@@ -1,0 +1,15 @@
+// Important commands
+
+Creating Package During Compililation
+---------------------------------------
+
+1. javac -d . <className>.java
+2. javac -d <path> <className>.java
+
+dot(.) --> To create package in current directory. or
+<path> --> Create package at your desired path.
+
+
+Run the program of any Package
+-------------------------------
+java <packageName>.<className>

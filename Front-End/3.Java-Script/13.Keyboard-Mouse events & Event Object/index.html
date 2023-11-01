@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm">
+        Name:
+        <input type="text" name="n" onkeyup="fun1()" onkeypress="fun2()"
+        id="myinput">
+        <br><br>
+        Pass:
+        <input type="password" name="p">
+    </form>
+    <script>
+        var result=document.getElementById("myinput")
+function fun1(){
+    result.style.borderBottom="4px solid blue"
+}
+function fun2(){
+    result.style.borderBottom="4px solid red"
+    result.style.textTransform="uppercase"
+}
+
+        /*
+    function fun1(){
+        console.log("onkeyup called");
+    }
+    function fun2(){
+        console.log("onkeydown called");
+    }
+    function fun3(){
+        console.log("onkeypress called");
+    }
+    */ 
+    </script>
+</body>
+</html>

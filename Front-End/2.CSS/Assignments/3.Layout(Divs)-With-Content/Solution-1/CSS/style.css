@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+    word-wrap: break-word;
+}
+
+.main{
+    height: auto;
+    width: 100%;
+}
+
+.header{
+    height: 200px;
+    background: pink;
+    margin: 15px 30px;
+}
+
+.inner{
+    height: 200px;
+    margin-left: 38%;
+    margin-top: 50px;
+
+}
+.pic{
+
+    float: left;
+}
+
+.headline{
+    float: left;
+}
+
+.logo{
+    height: 100px;
+    width: 50px;    
+}
+
+.links{
+    height: auto;
+    background: pink;
+    text-align: center;
+    margin: 15px 30px;
+}
+
+.links a{
+    color: red;
+    margin-top: 100px;
+    padding: 5px;
+}
+
+.intro{
+    height: auto;
+    background: pink;
+    text-align: center;
+    margin: 15px 30px;
+}
+
+.footer{
+    height: auto;
+    background: pink;
+    text-align: center;
+    margin: 15px 30px;
+}

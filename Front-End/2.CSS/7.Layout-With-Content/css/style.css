@@ -1,0 +1,125 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.container {
+    height: auto;
+    width: 100%;
+}
+
+.header {
+    height: auto;
+    width: 100%;
+    background: lightblue;
+    padding: 30px;
+}
+
+.header img {
+    height: 70px;
+    width: 70px;
+}
+
+.header p {
+    font-size: 40px;
+    float: right;
+    margin-right: 150px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.nav {
+    height: auto;
+    width: 100%;
+    background: wheat;
+    padding: 16px 0px;
+    position: sticky;
+    top: 0px;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 16px 40px;
+}
+
+.nav a:hover {
+    background: purple;
+    color: white;
+}
+
+.center {
+    height: 1700px;
+    width: 100%;
+}
+
+.left {
+    height: 1700px;
+    width: 25%;
+    float: left;
+    background: lightgoldenrodyellow;
+}
+
+.right {
+    height: 1700px;
+    width: 75%;
+    float: right;
+}
+
+.left ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.left li {
+    background: lightcoral;
+    text-align: center;
+    padding: 18px 0px;
+    margin-top: 3px;
+}
+
+.left #mylist {
+    font-size: 25px;
+    background: yellowgreen;
+}
+
+.left li:hover {
+    background: lightpink;
+}
+
+.row {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.product {
+    height: 400px;
+    width: 25%;
+    float: left;
+    border: solid;
+}
+
+.content {
+    padding: 10px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.content button {
+    padding: 7px 10px;
+    background: purple;
+    color: white;
+    margin-top: 10px;
+}
+
+.footer {
+    height: auto;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    padding: 40px;
+}

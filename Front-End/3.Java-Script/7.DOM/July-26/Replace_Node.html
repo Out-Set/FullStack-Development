@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+    </div>
+    <p>Lorem ipsum dolor sit.</p>
+
+    <script>
+        var parent = document.querySelector("div");
+        var oldNode = document.querySelector("h2");
+        var newNode = document.querySelector("p");
+
+        var repNode = parent.replaceChild(newNode, oldNode);
+        
+        console.log(parent);
+    </script>
+</body>
+</html>
+
+
+<!-- Replace h2 with paragraph -->

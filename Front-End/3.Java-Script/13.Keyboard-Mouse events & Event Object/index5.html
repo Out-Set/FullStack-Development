@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm">
+        Name:
+        <input type="text" name="n" id="myinput" value="Rahul"
+        onfocus="fun1()" onblur="fun2()">
+    </form>
+    <script>
+    function fun1(){
+        document.getElementById("myinput").value='';
+    }
+    function fun2(){
+        document.getElementById("myinput").value='Amit';
+    }
+    </script>
+</body>
+</html>

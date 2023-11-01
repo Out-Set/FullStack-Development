@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a
+        {
+            border: solid 2px red; height: 600px; width: 50%; border-radius: 50%;
+            background-image: url(./mg-cthu--1h_NN3nqzI-unsplash.jpg);
+            background-size: 150px 150px;
+            animation: result 20s linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes result
+        {
+           0%{ transform: rotate(0deg);}
+           100%{transform: rotate(360deg);}
+        }
+        .b
+        {
+            border: solid 2px red; height: 400px; width: 400px; border-radius: 100%;
+            margin-top: 100px; background-image: url(./waranont-joe-T7qyLNPwgKA-unsplash.jpg);
+                               background-size: 100px 100px;
+                               position: relative;
+                               animation: rohit 5s linear;
+                               animation-direction: alternate-reverse;
+                               animation-iteration-count: infinite;
+        }
+        @keyframes rohit
+        {
+            0%{ transform: rotate(0deg);}
+            100%{ transform: rotate( 360deg );}
+        }
+        .c
+        {
+            border: solid 2px red; height: 200px; width: 200px; border-radius: 100%;
+            position: relative; bottom: 300px; background-image: url(./javardh-kTJ8MnqQozg-unsplash.jpg);
+                                               background-size: 80px 80px;
+                                               animation: rahul 10s linear;
+                                               animation-iteration-count: infinite;
+        }
+        @keyframes rahul
+        {
+            
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <center><div class="a"><div class="b"></div><div class="c"></div></div></center>
+</body>
+</html>

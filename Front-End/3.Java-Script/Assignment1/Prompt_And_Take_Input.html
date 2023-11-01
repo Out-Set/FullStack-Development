@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun1()">Take A</button>
+    <button onclick="fun2()">Take B</button>
+    <br><br>
+
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Substract</button>
+    <button onclick="mul()">Multiply</button>
+    <button onclick="div()">Divide</button>
+
+    <script>
+
+        var a, b;
+        
+        function fun1(){
+            a = parseInt(prompt("Enter 1st number")); 
+            console.log(a);           
+        }
+
+        function fun2(){
+            b = parseInt(prompt("Enter 2nd Number"))  
+            console.log(b);          
+        }
+
+        function add(){
+            prompt("result=",a+b);
+        }
+        function sub(){
+            prompt("result=",a-b);
+        }
+        function mul(){
+            prompt("result=",a*b);
+        }
+        function div(){
+            prompt("result=",a/b);
+        }
+
+        
+    </script>
+    
+</body>
+</html>

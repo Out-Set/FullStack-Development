@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+span{color: red;}
+    </style>
+</head>
+<body>
+    <form name="frm">
+        Name:
+        <input type="text" name="n" id="myname">
+        <span id="myspan1"></span>
+        <br><br>
+        Pass:
+        <input type="password" name="p" id="mypass">
+        <span id="myspan2"></span>
+    </form>
+    <script>
+function validate1(){
+    var ptr=/^[a-z]+$/
+    if(!ptr.test(document.frm.n.value)){
+  document.getElementById("myspan1").innerHTML="name not valid"      
+    }
+    else{
+        document.getElementById("myspan1").innerHTML=""   
+    }
+}
+function validate2(){
+    var ptr=/^[0-9]+$/
+    if(!ptr.test(document.frm.p.value)){
+  document.getElementById("myspan2").innerHTML="password not valid"      
+    }
+    else{
+        document.getElementById("myspan2").innerHTML=""    
+    }
+}
+document.getElementById("myname").addEventListener("keyup",validate1)
+document.getElementById("mypass").addEventListener("keyup",validate2)
+</script>
+</body>
+</html>

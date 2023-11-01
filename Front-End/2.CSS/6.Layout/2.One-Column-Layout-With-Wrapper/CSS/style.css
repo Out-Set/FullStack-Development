@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainbody{
+    height: 1000px;
+    width: 100%;
+    /* background-color: grey; */
+}
+
+.wrapper{
+    height: 1000px;
+    width: 80%;
+    margin: 0px 10%;
+    background: white;
+}
+
+.header{
+    height: 150px;
+    width: 100%;
+    background: orange;
+    text-align: center;
+}
+
+.menu{
+    height: 50px;
+    width: 100%;
+    background: wheat;
+    text-align: center;
+}
+
+.center{
+    height: 700px;
+    width: 100%;
+    background: purple;
+    text-align: center;
+}
+
+.footer{
+    height: 100px;
+    width: 100%;
+    background: black;
+    text-align: center;
+    color: white;
+}

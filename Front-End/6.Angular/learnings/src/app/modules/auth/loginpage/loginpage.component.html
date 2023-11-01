@@ -1,0 +1,23 @@
+<form [className]="'loginpage'" [formGroup]="loginform" (ngSubmit)="mylogin()">
+    <div class="container border shadow p-5 mt-2 bg-light page">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="h1">User Login Page</p>
+            </div>
+            <div class="col-md-12 mt-2">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control" formControlName="email">
+            </div>
+            <div class="col-md-12 mt-2">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" formControlName="password">
+            </div>
+            <div class="col-md-12 text-center">
+                <button class="btn btn-primary mt-4">Login</button>
+                <a class="btn btn ms-3 mt-4" [routerLink]="['/dashboard']">Home Page</a>
+                <a class="btn btn ms-3 mt-4" [routerLink]="['register']">New User</a>
+                <button class="btn btn-danger ms-3 mt-4">Cancel</button>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        span{
+            background-color: pink;
+            /* padding: 5px; */
+        }
+    </style>
+</head>
+<body>
+    <script src="jquery.js"></script>
+    <button>Click-Me</button>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, dignissimos!</p>
+    <p>
+        <span>Google</span>
+        <span>MS</span>
+        <span>Ducat</span>
+        <span>Noida</span>
+        <span>Dell</span>
+        <span>Lenove</span>
+    </p>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("span").last().hide(200, function(){
+                    $(this).prev().last().hide(2000, arguments.callee);
+                });
+
+                $("span").first().show(200, function(){
+                    $(this).next().first().show(2000, arguments.callee);
+                });
+            })
+        })
+    </script>
+</body>
+</html>
+

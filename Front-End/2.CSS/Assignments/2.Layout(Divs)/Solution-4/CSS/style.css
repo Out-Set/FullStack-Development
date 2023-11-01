@@ -1,0 +1,33 @@
+.main{
+    height: 650px;
+    width: 100%;
+}
+
+.header{
+    height: 50px;
+    width: 100%;
+    background: blue;
+}
+
+.b1{
+    height: 200px;
+    width: 100%;
+    background: red;
+    text-align: center;
+}
+
+.b2{
+    height: 200px;
+    width: 100%;
+    background: green;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.b3{
+    height: 200px;
+    width: 100%;
+    background: yellow;
+    text-align: center;
+    margin: 5px 0px;
+}

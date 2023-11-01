@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, harum accusamus nam, nulla adipisci, maxime
+        aperiam consequatur velit veritatis necessitatibus quasi sapiente quae voluptate ea iure vero doloremque? Et
+        tenetur commodi suscipit aliquid sed voluptatum mollitia excepturi odio ad debitis. Numquam in ipsam quod
+        aliquam blanditiis, quaerat quo illo quae?</h2>
+    <button onclick="stptime()">clrtime</button>
+    <script>
+        var result = document.querySelector("h2")
+
+        var id = setTimeout(function colorset() {
+            result.style.background = "orange"
+        }, 5000);
+
+        function stptime() {
+            clearTimeout(id)
+        }
+    </script>
+
+
+
+</body>
+
+</html>

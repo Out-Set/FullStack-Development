@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    height: 1000px;
+    width: 100%;
+}
+
+.header{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo{
+    height: 100px;
+    width: 10%;
+    background: red;
+    float: left;
+}
+
+.webhaed{
+    height: 100px;
+    width: 90%;
+    background: green;
+    float: left;
+}
+
+.menu{
+    height: 70px;
+    background: yellow;
+    text-align: center;
+}
+
+.b1{
+    height: 150px;
+    width: 100%;
+}
+
+.sec1{
+    height: 150px;
+    width: 33.33%;
+    background: blue;
+    float: left;
+    text-align: center;
+}
+
+.sec2{
+    height: 150px;
+    width: 33.33%;
+    background: grey;
+    float: left;
+    text-align: center;
+}
+
+.sec3{
+    height: 150px;
+    width: 33.33%;
+    background: violet;
+    float: left;
+    text-align: center;
+}
+
+.b2{
+    height: 500px;
+    width: 100%;
+    background: cadetblue;
+    text-align: center;
+}
+
+.pagecontent{
+    height: 500px;
+    width: 90%;
+    background: cadetblue;
+    text-align: center;
+    float: left;
+}
+
+.sidebar{
+    height: 500px;
+    width: 10%;
+    background: rgb(97, 204, 115);
+    text-align: center;
+    float: left;
+}
+
+.footer{
+    height: 100px;
+    width: 100%;
+    background: rgb(214, 102, 102);
+    text-align: center;
+}

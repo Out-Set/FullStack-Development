@@ -1,0 +1,25 @@
+Important:
+----------
+
+1. Multiple-Classes     &     Multiple-Thread     ----->     use Thread Class
+
+2. Single-Class    &     Multiple-Thread     ----->     use Runnable Interface
+
+
+
+Main method(): Also runs with the help of thread.
+
+getName(): returns the name of the thread.
+setname(): set the name of the thread.
+
+
+Important-Proble-To-Notice
+--------------------------
+In all the Thread implementation(through Thread class or Runnalbe interface), we are creating the method run() but to start the thread we are using start() method inside main. why?
+
+sol=>
+------
+goto the program ImpProg.java
+In Thread class, There is a start() method and inside start() method there is a run() method.
+So, by default we have to implement run() method only.
+

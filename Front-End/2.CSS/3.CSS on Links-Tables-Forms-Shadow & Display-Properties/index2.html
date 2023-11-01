@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p:nth-child(even){
+            background: blue;
+            width: 50%;
+            color: white;
+        }
+        p:nth-child(odd){
+            background: purple;
+            width: 60%;
+            color: white;
+        }
+
+        #p{
+            background: gray;
+            color: white;
+        }
+        /* p:hover{
+            background: pink;
+        }  */
+        p:hover:not(#p){
+            background: rgb(31, 119, 31); 
+        }
+    </style>
+</head>
+<body>
+    
+    <p id="p">Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+
+</body>
+</html>

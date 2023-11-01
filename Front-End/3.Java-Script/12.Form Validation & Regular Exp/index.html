@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm">
+        Name:
+        <input type="text" name="n">
+        <span id="myspan"></span>
+    </form>
+    <button type="submit" id="mybtn">Submit</button>
+    <script>
+var btn=document.getElementById("mybtn")
+function validate(){
+    var ptr=/^[a-z]+[@ _ $]+[A-Z]+$/;
+    if(ptr.test(document.frm.n.value))
+    {
+document.getElementById("myspan").innerHTML="valid"
+    }
+    else{
+        document.getElementById("myspan").innerHTML="not valid" 
+    }
+}
+btn.addEventListener("click",validate)
+
+</script>
+</body>
+</html>

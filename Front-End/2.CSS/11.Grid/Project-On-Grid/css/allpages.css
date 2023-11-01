@@ -1,0 +1,22 @@
+.aboutdata{padding: 20px; text-align: justify;
+background: url('../image/b2.jpeg'); background-attachment: fixed;
+background-repeat:no-repeat;
+}
+
+.blogrow::after{content: ""; clear: both; display: table;}
+.blog{float: left; border-right: solid;}
+.blog img{height: auto; max-width: 100%;}
+.blogcontent{padding: 10px; text-align: justify;}
+.blogcontent p{margin-top: 15px; text-indent: 50px;}
+.blogcontent button{padding: 8px; margin-top: 15px; background: orange;}
+.contactdata::after{content: ""; clear: both; display: table;}
+.cleft{float: left;  padding: 70px;}
+.cright{float: right; padding: 50px;}
+.cright [type="text"],[type="email"]{
+    height: 30px; width: 70%; margin: 5px 15%;
+}
+.cright textarea{height: 70px; width: 70%; margin: 5px 15%;}
+.cright [type="submit"]{
+   padding: 8px; margin-left: 15%; margin-top: 20px; width: 10%;
+   background: orange; 
+}

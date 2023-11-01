@@ -1,0 +1,10 @@
+To compile many java files at once---
+------------------------------------
+javac *.java
+
+
+
+To run files
+-------------
+java MyClient
+java MyServer

@@ -1,0 +1,53 @@
+
+
+.main{
+    height: auto;
+    width: 100%;
+}
+
+.heading{
+    height: auto;
+    width: 100%;
+    background: rgb(128, 128, 214);
+    
+}
+
+.inner img{
+    height: auto;
+    width: 70px;    
+}
+
+.inner h3{
+    text-align: center;
+}
+
+.navbar{
+    height: 50px;
+    width: 100%;
+    background: rgb(185, 179, 185);
+}
+
+.navbar h2{
+    height: 50px;
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.content{
+    height: 700px;
+    width: 100%;
+}
+
+.leftcontent{
+    width: 70%;
+    background: white;
+    float: left;
+}
+
+.rightcontent{
+    width: 30%;
+    background: rgb(187, 119, 187);
+    float: left;
+}

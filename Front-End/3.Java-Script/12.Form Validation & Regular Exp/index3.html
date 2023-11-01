@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm" onsubmit="validate()">
+        <!-- Name:
+        <input type="text" name="n">
+        <br><br>
+        Pass:
+        <input type="password" name="p"> -->
+        <!-- Gender:
+        <input type="radio" name="g" value="male">Male
+        <input type="radio" name="g" value="female">Female -->
+        select year:
+        <select name="se">
+            <option disabled selected>year</option>
+            <script>
+                for(var i=1910;i<=2050;i++){
+                    document.write("<option>"+i+"</option>")
+                }
+            </script>
+        </select>
+        <br><br>
+        <input type="submit" name="sub">
+    </form>
+    <script>
+function validate(){
+if(document.frm.se.selectedIndex==false){
+    alert("select year")
+}
+
+
+
+
+    /*
+if(document.frm.g[0].checked==false &&document.frm.g[1].checked==false)
+{
+    alert("check gender")
+}
+*/ 
+
+
+    /*
+    if(document.frm.n.value=='')
+    {
+        alert("name field empty");
+        return false
+    }
+    if(document.frm.p.value==''){
+        alert("password field empty")
+        return false 
+    }
+    */
+}
+    </script>
+</body>
+</html>

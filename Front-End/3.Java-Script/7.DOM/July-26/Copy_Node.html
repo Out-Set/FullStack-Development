@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Welcome to ducat</h2>
+        <script>
+            var parent = document.querySelector("div");
+            var ele = document.querySelector("h2");
+            
+            var copyNode = ele.cloneNode(true);
+            console.log(copyNode);
+
+            parent.appendChild(copyNode);
+            console.log(parent);
+        </script>
+    </div>
+    
+</body>
+</html>
+
+
+<!-- 
+    cloneNode(true): Clones element with its content.
+    cloneNode(false): Clones only content.
+ -->

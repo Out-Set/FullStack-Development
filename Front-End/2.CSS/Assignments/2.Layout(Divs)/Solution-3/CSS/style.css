@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    height: 700px;
+    width: 100%;
+}
+
+.mainmenu{
+    height: 50px;
+    width: 100%;
+    background: red;
+    text-align: center;
+}
+
+.header{
+    height: 100px;
+    width: 100%;
+    background: lightblue;
+    text-align: center;
+}
+
+.contentbody{
+    height: 500px;
+    width: 100%;
+}
+
+.content{
+    height: 500px;
+    width: 60%;
+    background: green;
+    text-align: center;
+    float: left;
+}
+
+.sidebar{
+    height: 500px;
+    width: 40%;
+    background: lightgreen;
+    text-align: center;
+    float: left;
+}
+
+.footer{
+    height: 50px;
+    width: 100%;
+    background: brown;
+    text-align: center;
+}
+

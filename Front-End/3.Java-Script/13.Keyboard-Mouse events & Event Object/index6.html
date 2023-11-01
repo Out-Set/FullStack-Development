@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm">
+        Name:
+        <input type="text" name="n" id="myinput" value="Rahul"
+        >
+    </form>
+
+ <script>
+    var result=document.getElementById("myinput")
+    function data(e){
+// console.log(e);
+// console.log(e.target);
+console.log(e.target.value);
+    }
+    result.addEventListener("keyup",data)
+ </script>
+</body>
+</html>

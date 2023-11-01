@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" style="display: flex; justify-content: space-between; width: 100%;">
+        <div id="div1" style="height: 150px; width: 150px; border: 1px solid;"></div>
+        <div id="div2" style="height: 150px; width: 150px; border: 1px solid;"></div>
+        <div id="div3" style="height: 150px; width: 150px; border: 1px solid;"></div>
+        <div id="div4" style="height: 150px; width: 150px; border: 1px solid;"></div>
+        <div id="div5" style="height: 150px; width: 150px; border: 1px solid;"></div>
+    </div>
+
+    <br>
+
+    <button onclick="setColor('div1', 'red')">Red</button>
+    <button onclick="setColor('div2', 'blue')">Blue</button>
+    <button onclick="setColor('div3', 'green')">Green</button>
+    <button onclick="setColor('div4', 'pink')">Pink</button>
+    <button onclick="setColor('div5', 'yellow')">Yellow</button>
+    <button onclick="resetColor()">Reset</button>
+
+    <script>
+        function setColor(id, color){
+            var id = document.getElementById(id);
+            id.style.backgroundColor = color
+        }
+
+        function resetColor(){
+            var id = document.getElementById("container");
+
+            // console.log(id.children.length)
+            // console.log(id.length)
+
+            for(var i=0; i<id.children.length; i++){
+                id.children[i].style.backgroundColor = "";
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+
+    <script>
+        var parent = document.querySelector("div");
+        var para = document.querySelector("p");
+
+        var delNode = parent.removeChild(para);
+        
+        console.log(parent);
+    </script>
+</body>
+</html>

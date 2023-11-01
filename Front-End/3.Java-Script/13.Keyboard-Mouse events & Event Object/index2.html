@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm">
+        Name:
+        <input type="text" name="n" onchange="fun()" 
+        id="myinput">
+        <br><br>
+        Pass:
+        <input type="password" name="p">
+    </form>
+    <script>
+        var result=document.getElementById("myinput")
+function fun(){
+result.style.textTransform="uppercase"
+result.style.color="red"
+}
+    </script>
+</body>
+</html>

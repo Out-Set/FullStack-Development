@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="myul">
+        <li>Home</li>
+        <li>about</li>
+        <li id="mylist">news</li>
+        <li>contact</li>
+    </ul>
+    <script>
+        var parent = document.getElementById("myul")
+        var ref = document.getElementById("mylist")
+        var ele = document.createElement("li")
+        ele.textContent = "ducat"
+
+        // Insert Before
+        parent.insertBefore(ele, ref)
+
+        console.log(parent);
+    </script>
+</body>
+
+</html>

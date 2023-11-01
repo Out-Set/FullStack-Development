@@ -1,0 +1,68 @@
+
+*{margin: 0px; padding: 0px; box-sizing: border-box; word-wrap: break-word;}
+.sicon{padding: 10px 0px; background: lightblue;}
+.sicon i{margin-left: 100px; font-size: 24px;}
+.header{padding: 40px; text-align: center; background: lightcyan;
+font-size: 4vw;
+}
+.menu{padding: 17px 0px; background: lightgray;}
+.menu a{text-decoration: none; padding: 17px 30px;}
+.menu a:hover{background: purple; color: white;}
+
+.slider{padding: 250px; background: url('../image/b2.jpeg'); animation: data 4s;
+animation-iteration-count: infinite;
+}
+@keyframes data{
+    0%{background: url('../image/b2.jpeg');}
+    30%{background: url('../image/b1.jpg');}
+    60%{background: url('../image/b3.jpg');}
+    100%{background: url('../image/b4.jpg');}
+}
+
+.center::after{content: ""; clear: both; display: table;}
+.left{float: left; }
+.right{float: right;}
+
+.left ul{list-style: none; margin: 20px;}
+.left li{background: lightblue; text-align: center; padding: 17px 0px; margin-top: 3px;}
+.left #mycat{background: purple; color: white; font-size: 2vmax;}
+.prow::after{content: ""; clear: both; display: table;}
+.prow{margin-top: 20px;}
+.product{float: left; border: solid;}
+.product img{height: auto; max-width: 100%;}
+.content{padding: 10px; text-align: justify;}
+.content p{margin-top: 10px;}
+.content button{padding: 8px; background: purple; color: white; margin-top: 20px;}
+.footer{padding: 40px; text-align: center; background: black;
+color: white; font-size: 22px;}
+
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+@media only screen and (max-width:992px){
+    .sicon{display: none;}
+    .product{width:50%}
+    .blog{width: 50%;}
+}
+
+@media only screen and (max-width:768px){
+    .menu a{display: block; text-align: center;}
+    .left,.right{width: 100%; text-align: center;}
+    .product{width: 100%; text-align: center;}
+    .content{text-align: center;}
+    .blog{width: 100%;}
+    .cleft,.cright{width: 100%; text-align: center;}
+    .cright [type="submit"]{
+        font-size: 10px;
+    }
+}

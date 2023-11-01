@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2></h2>
+    <button onclick="stptime()">stop</button>
+    <script>
+        var i = 1
+
+        var id = setInterval(function clock() {
+            document.querySelector("h2").innerHTML = i
+            i++
+        }, 1000);
+
+
+        function stptime() {
+            clearInterval(id)
+        }
+    </script>
+</body>
+
+</html>

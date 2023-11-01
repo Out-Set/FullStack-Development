@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2></h2>
+    <script>
+        var i = 1
+        var j = 0
+        var k = 0
+        function clock() {
+            document.querySelector("h2").innerHTML = k + ":" + j + ":" + i
+            i++
+            if (i == 60) {
+                i = 1
+                j = j + 1
+                if (j == 5) {
+                    j = 0
+                    k = k + 1
+                }
+            }
+        }
+        setInterval(clock, 10);
+    </script>
+</body>
+
+</html>

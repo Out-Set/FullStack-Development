@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2></h2>
+    <script>
+
+const clock=()=>{
+    var data=new Date()
+    var h=data.getHours()
+    var m=data.getMinutes()
+    var sec=data.getSeconds()
+    var mili=data.getMilliseconds()
+    var p="AM"
+    if(h==12)
+    {
+        h=12
+    }
+    else if(h>12){
+        h=h-12
+        p="PM"
+    }
+    var time=`${h}:${m}:${sec}:${mili}-${p}`
+    document.querySelector("h2").innerHTML=time
+    setTimeout(clock,100)
+}
+clock()
+
+    </script>
+</body>
+</html>

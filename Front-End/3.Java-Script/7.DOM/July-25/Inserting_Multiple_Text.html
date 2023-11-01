@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        var ele = document.createElement("h1");
+        // ele.textContent="this is heading 1"
+        // ele.textContent="this is another data"  // This will override the upper text content.
+
+        // Right way to do it
+        var txt1 = document.createTextNode("this is heading 1 ")
+        var txt2 = document.createTextNode(" this is another data  ")
+        ele.appendChild(txt1)
+        ele.appendChild(txt2)
+
+        // normalize(): Removes the empty node. { Whenever we append multiple element nodes in any parent node, by default an empty node is created by DOM. }
+        ele.normalize()
+        var result = document.querySelector("div")
+        result.appendChild(ele)
+        console.log(result);
+    </script>
+</body>
+
+</html>

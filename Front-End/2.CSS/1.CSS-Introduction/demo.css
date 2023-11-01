@@ -1,0 +1,39 @@
+/* h2{
+    background: purple; 
+    color: white; 
+    width: 60%; 
+    text-align: center;
+}
+
+p{
+    text-transform: uppercase;
+    color: blue;
+} */
+
+
+/* Selector */
+
+#myh{
+    background: red;
+}
+
+.a{
+    background: blue;
+}
+
+.data{
+    background: purple;
+    color: deepskyblue;
+}
+
+.txt{
+    background: pink;
+}
+
+#h{
+    background: green;
+    width: 50%;
+    color: white;
+}
+
+

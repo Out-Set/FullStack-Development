@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mydiv">
+
+    </div>
+    <script>
+        var result = document.createElement("h1")
+
+        var txt = document.createTextNode("hello users")
+        
+        result.appendChild(txt)
+        // console.log(result);
+        var parent = document.getElementById("mydiv")
+        parent.appendChild(result)
+        console.log(parent);
+    </script>
+</body>
+
+</html>

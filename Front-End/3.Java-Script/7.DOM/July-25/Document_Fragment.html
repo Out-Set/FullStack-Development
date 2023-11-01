@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <div></div>
+  <script>
+    var parent = document.querySelector("div")
+    var ele1 = document.createElement("h1")
+    var ele2 = document.createElement("h2")
+    var ele3 = document.createElement("h3")
+    var ele4 = document.createElement("h4")
+    var ele5 = document.createElement("p")
+    ele1.textContent = "heading 1"
+    ele2.textContent = "heading 2"
+    ele3.textContent = "heading 3"
+    ele4.textContent = "heading 4"
+    ele5.textContent = "paragraph"
+
+    // Document Fragment: Best way to insert multiple element nodes
+    var df = document.createDocumentFragment()
+
+    df.appendChild(ele1)
+    df.appendChild(ele2)
+    df.appendChild(ele3)
+    df.appendChild(ele4)
+    df.appendChild(ele5)
+    parent.appendChild(df)
+    console.log(parent);
+  </script>
+</body>
+
+</html>

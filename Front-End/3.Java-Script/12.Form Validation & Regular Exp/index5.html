@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+div{border: solid; padding: 10px;}
+    </style>
+</head>
+<body>
+   <div id="a">1
+<div id="b">2
+<div id="c">3
+<div id="d">4</div>
+</div>
+</div>
+   </div> 
+   <script>
+function fun1(){
+    console.log("1");
+}
+function fun2(){
+    console.log("2");
+}
+function fun3(){
+    console.log("3");
+}
+function fun4(){
+    console.log("4");
+}
+document.getElementById("a").addEventListener("click",fun1,false)
+document.getElementById("b").addEventListener("click",fun2,false)
+document.getElementById("c").addEventListener("click",fun3,false)
+document.getElementById("d").addEventListener("click",fun4,false)
+   </script>
+</body>
+</html>

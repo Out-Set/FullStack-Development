@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+div{padding: 10px; border: solid;}
+    </style>
+</head>
+<body>
+   <div id="a">1
+<div id="b">2
+<div id="c">3
+<div id="d">4</div>
+</div>
+</div>
+   </div> 
+   <script>
+function fun1(){
+    console.log("1");
+}
+function fun2(e){
+    e.stopPropagation()
+    console.log("2");
+}
+function fun3(){
+    console.log("3");
+}
+function fun4(){
+    console.log("4");
+}
+document.getElementById("a").addEventListener("click",fun1,true)
+document.getElementById("b").addEventListener("click",fun2,true)
+document.getElementById("c").addEventListener("click",fun3,true)
+document.getElementById("d").addEventListener("click",fun4,true)
+   </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    height: 500px;
+    width: 100%;
+}
+
+.header{
+    height: 100px;
+    width: 100%;
+    background: red;
+    text-align: center;;
+}
+
+.body{
+    height: 300px;
+    width: 100%;
+}
+
+.leftcontent{
+    height: 300px;
+    width: 33.33%;
+    background: yellow;
+    text-align: center;
+    float: left;
+}
+
+.midcontent{
+    height: 300px;
+    width: 33.33%;
+    background: green;
+    text-align: center;
+    float: left;
+}
+
+.rightcontent{
+    height: 300px;
+    width: 33.33%;
+    background: greenyellow;
+    text-align: center;
+    float: left;
+}
+
+.footer{
+    height: 100px;
+    width: 100%;
+    background: grey;
+    text-align: center;
+}
+

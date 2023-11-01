@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="myform1">
+        Name:
+        <input type="text" name="myname" placeholder="Enter Name" maxlength="5" size="30px">
+
+        <input type="text" name="myname" placeholder="Enter Name" value="Amit Kumar" size="30px" disabled>
+        <br><br>
+
+
+        Password:
+        <input type="password" name="p" placeholder="Enter Password" maxlength="5" size="30px">
+        <br><br>
+
+        DOB:
+        <input type="date" name="d" min="2023-06-10" max="2023-09-20">
+        <br><br>
+
+        File Upload:
+        <input type="file" name="f" multiple>
+        <br><br>
+
+        Gender:
+        <input type="radio" name="g" value="male" checked>Male
+        <input type="radio" name="g" value="female">Female
+        <br><br>
+
+        Tick:
+        <input type="checkbox" name="c" value="php">PHP
+        <input type="checkbox" name="c" value="java">JAVA
+        <input type="checkbox" name="c" value="css">CSS
+        <br><br>
+
+        select year:
+        <select name="se">
+            <option>Year</option>
+            <option>1910</option>
+            <option>1911</option>
+            <option>1912</option>
+            <option>1913</option>
+        </select>
+
+        <select name="se">
+            <option disabled selected>Year</option>
+            <option>1910</option>
+            <option>1911</option>
+            <option>1912</option>
+            <option>1913</option>
+        </select>
+        <br><br>
+
+        Address:
+        <textarea name="ad" placeholder="enter address" rows="5" cols="35"></textarea>
+
+        <textarea name="ad" placeholder="enter address" rows="5" cols="35" readonly>
+        aasd asd asd asd asasd 
+        dad asd asd asda s 
+        a das dsad
+        </textarea>
+
+
+        <br><br>
+        <input type="submit" name="sub" value="Store Data">
+        <button type="submit">Login</button>
+        <input type="reset" name="re" value="Reset">
+        <button>click</button>
+        <button type="button">Show Data</button>
+
+    </form>
+</body>
+
+</html>

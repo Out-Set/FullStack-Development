@@ -1,0 +1,41 @@
+<form [formGroup]="myform" (ngSubmit)="mysubmitform()">
+    <div class="container border shadow p-5 mt-2 bg-light page">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="h1">User Register Page</p>
+            </div>
+            <div class="col-md-6 mt-2">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" formControlName="fullname">
+            </div>
+            <div class="col-md-6 mt-2">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control" formControlName="email">
+            </div>
+            <div class="col-md-6 mt-2">
+                <label class="form-label">Gender</label>
+                <select class="form-control" formControlName="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="col-md-6 mt-2">
+                <label class="form-label">Phone Number</label>
+                <input type="text" class="form-control" formControlName="phone">
+            </div>
+            <div class="col-md-6 mt-2">
+                <label class="form-label">Create Password</label>
+                <input type="password" class="form-control" formControlName="password">
+            </div>
+            <div class="col-md-6 mt-2">
+                <label class="form-label">Remarks</label>
+                <textarea class="form-control" formControlName="remark">Type Comment</textarea>
+            </div>
+            <div class="col-md-12 text-center">
+                <!-- <button class="btn btn-primary mt-2">Register</button> -->
+                <a class="btn btn-primary mt-2" [routerLink]="['/auth']">Register</a>
+                <button class="btn btn-danger ms-3 mt-2">Cancel</button>
+            </div>
+        </div>
+    </div>
+</form>

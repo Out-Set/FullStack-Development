@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>callback function</h2>
+    <script>
+        /*
+function display(a){
+    console.log("display called",a);
+}
+
+function data(callback){
+    var a=100
+    callback(a)
+}
+data(display)
+*/
+
+
+        /*
+        function data(callback){
+            var a=100
+            callback(a)
+        }
+        data((a)=>{
+            console.log("display called",a);
+        })
+         
+        
+        var arr=[10,20,30,40,50,60];
+        arr.forEach((item)=>{
+        console.log(item*2);
+        })
+        
+        
+        var arr=[10,20,30,40,50,60];
+         var newarr=arr.map((item)=>{
+        // console.log(item*5);
+        return item*3
+        })
+        
+        console.log(newarr);
+        */
+
+        var arr = [5, 50, 40, 12, 23, 18, 17, 77, 45, 18, 10, 12, 54]
+
+        var newarr = arr.filter((data) => {
+            //   return data<20
+            // return data>20
+            return data >= 15 && data <= 30
+        })
+
+        console.log(newarr);
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <img src="pic2.jpeg" height="200px" width="300px" name="myimage" 
+    id="mydata" onmousemove="fun1()" onmousewheel="fun2()">
+    <script>
+
+function fun1(){
+// document.myimage.src="pic1.jpeg"
+document.getElementById("mydata").src="pic1.jpeg"
+}
+function fun2(){
+// document.myimage.src="pic3.jpeg"
+document.getElementById("mydata").src="pic3.jpeg"
+}
+
+
+
+
+        /*
+function fun1(){
+// document.myimage.src="pic1.jpeg"
+document.getElementById("mydata").src="pic1.jpeg"
+}
+function fun2(){
+// document.myimage.src="pic3.jpeg"
+document.getElementById("mydata").src="pic3.jpeg"
+}
+*/ 
+    </script>
+</body>
+</html>

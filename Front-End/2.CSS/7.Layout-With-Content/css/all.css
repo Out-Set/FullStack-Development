@@ -1,0 +1,9 @@
+
+.aboutdata{padding: 20px; text-align:justify;
+background: url('../images/slider.jpg'); background-attachment: fixed;}
+
+.brow{height: 1100px; width: 100%;}
+.blog{height: 500px; width: 33.33%; float: left; border: solid;}
+.bcontent{padding: 14px; text-align: justify; line-height: 25px;}
+.bcontent button{padding: 7px 10px; background: purple; color: white;
+margin-top: 7px;}

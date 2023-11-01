@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+
+        /* 1st-Way: Through User-Defined (i.e. using class/id */
+        /* .a .b, .c {
+            width: 80%;
+            height: 30px;
+            margin: 4px 10%;
+        }
+
+        textarea {
+            height: 100px;
+            width: 80%;
+            margin: 4px 10%;
+        }
+
+        .d {
+            height: 40px;
+            width: 10%;
+            margin-left: 10%;
+            margin-top: 5px;
+            background: orange;
+        } */
+
+
+        /* 2nd-Way: Without User-Defined */
+        [type="text"], [type="email"], [type="number"] {
+            width: 80%;
+            height: 30px;
+            margin: 4px 10%;
+        }
+
+        textarea {
+            height: 100px;
+            width: 80%;
+            margin: 4px 10%;
+        }
+
+        [type="submit"] {
+            height: 40px;
+            width: 10%;
+            margin-left: 10%;
+            margin-top: 5px;
+            background: orange;
+        }
+         
+    </style>
+</head>
+
+<body>
+    <form name="frm">
+        <input type="text" name="n" placeholder="Enter Name" class="a">
+        <input type="email" name="e" placeholder="enter email" class="b">
+        <input type="number" name="n" placeholder="enter Age" class="c">
+        <textarea name="ad" placeholder="enter ur message"></textarea>
+        <input type="submit" name="sub" class="d">
+    </form>
+</body>
+
+</html>

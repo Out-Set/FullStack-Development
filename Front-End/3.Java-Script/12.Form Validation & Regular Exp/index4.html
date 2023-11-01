@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+#more{display: none;}
+    </style>
+</head>
+<body>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit eos quasi voluptatibus sed repellat aspernatur tempora quos odio alias, ullam, optio aliquam rem, quisquam tenetur eligendi dolor quo enim unde eum necessitatibus reprehenderit! Odit dolores deleniti, impedit tenetur necessitatibus itaque.
+    <span id="less">..........</span>
+    <span id="more">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint consequuntur blanditiis quos voluptatem modi nulla provident a corrupti magni voluptas, voluptate itaque fugiat excepturi id quo aliquam labore? Quod quibusdam, nam quidem praesentium minima numquam inventore totam omnis obcaecati et non iure. Hic blanditiis cupiditate molestias nihil quas tenetur ipsa sequi impedit temporibus fuga mollitia repellat, laudantium provident? Illum repellat magnam nemo nobis commodi, aliquam dolore veniam voluptas ipsum cum! Laudantium temporibus sequi tempore rem suscipit quas eum consectetur, dolorum optio iste dolore, reiciendis ipsa! Voluptatibus ex soluta laborum inventore praesentium numquam earum vero corporis dolorem voluptas aut dignissimos labore temporibus, voluptatum quisquam eum iusto, tenetur dolor sunt expedita deleniti, adipisci eaque iste accusantium? Modi, sint reprehenderit. Nemo labore repellendus possimus sapiente nulla voluptates quos, eveniet sunt consectetur, nostrum voluptatibus accusantium nobis obcaecati eligendi ipsa. Sit ea, quidem sequi fugit eveniet suscipit. Beatae, modi ipsam. Fuga dolor nesciunt cumque culpa commodi debitis vel recusandae placeat, tenetur, incidunt nemo sit aperiam molestiae consequuntur consequatur ducimus deleniti nobis laboriosam corporis architecto sint ab? Corrupti non, dignissimos nobis error minus dolor vero perferendis eveniet fuga asperiores doloribus provident, officiis et. Error placeat asperiores facilis inventore iure in veritatis, minima ullam nesciunt tempore saepe?</span>
+    <button id="mybtn" onclick="data()">Read More</button> 
+</p>
+
+  <script>
+var lessdata=document.getElementById("less")
+var moredata=document.getElementById("more")
+var btndata=document.getElementById("mybtn")
+function data(){
+    if(lessdata.style.display=="none"){
+        lessdata.style.display="inline"
+        moredata.style.display="none"
+        btndata.innerHTML="Read More "
+    }
+    else{
+        lessdata.style.display="none"
+        moredata.style.display="inline"
+        btndata.innerHTML="Read Less "
+    }
+}
+
+
+  </script> 
+</body>
+</html>
