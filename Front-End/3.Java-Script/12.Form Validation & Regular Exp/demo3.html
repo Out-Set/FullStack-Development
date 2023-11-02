@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+    span{color: red;}
+    </style>
+</head>
+<body>
+    <form name="frm">
+Name:
+<input type="text" name="n" id="myinput">
+<span id="myspan"></span>
+    </form>
+ <input type="submit" name="sub" id="mybtn">
+ <script>
+ var ptr=/^[a-z 0-9]+$/
+// var ptr=/^[a-z A-Z]+$/
+// var ptr=/^[a-z]+[A-Z]+$/
+// var ptr=/^[a-z @ $]+[A-Z]+$/
+// var ptr=/^[a-z]+[@ _ $]+[A-Z]+$/
+function validate(){
+   if(!ptr.test(document.frm.n.value)){
+document.getElementById("myspan").innerHTML="not valid"
+   }
+   else{
+    document.getElementById("myspan").innerHTML=" "
+   }
+}
+document.getElementById("myinput").addEventListener("keyup",validate)
+
+ </script>
+</body>
+</html>

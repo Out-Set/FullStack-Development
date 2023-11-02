@@ -1,0 +1,32 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "Name": "Amit kumar",
+            "age": 30,
+            "email":"amit@gmail.com",
+            "city":"Noida"
+        },
+        {
+            "id": 2,
+            "Name": "sumit kumar",
+            "age": 32,
+            "email":"sumit@gmail.com",
+            "city":"agra"
+        },
+        {
+            "id": 3,
+            "Name": "hari kumar",
+            "age": 27,
+            "email":"hari@gmail.com",
+            "city":"mathura"
+        },
+        {
+            "id": 4,
+            "Name": "Rahul kumar",
+            "age": 36,
+            "email":"rahul@gmail.com",
+            "city":"Noida2"
+        }
+    ]
+}

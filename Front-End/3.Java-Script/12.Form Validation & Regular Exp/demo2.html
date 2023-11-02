@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm1">
+        Name:
+        <input type="text" name="n" class="myinput">
+        <br><br>
+        Pass:
+        <input type="password" name="p">
+    </form>
+ 
+    <script>
+        /*
+var result=document.frm1.p
+
+console.log(result);
+document.write(result)
+*/ 
+var result= document.getElementsByClassName("myinput")
+console.log(result[0]);
+document.write(result[0])
+/*
+var result=document.forms 
+console.log(result);
+document.write(result)
+
+var result=document.frm2 
+
+console.log(result);
+document.write(result)
+*/ 
+    </script>
+</body>
+</html>
