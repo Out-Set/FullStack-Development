@@ -1,0 +1,37 @@
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Region</th>
+                    <th scope="col">Rep</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Cost</th>
+                    <th scope="col">Units</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let a of mydatalist">
+                    <th scope="row">{{a._id}}</th>
+                    <td>{{a.Region}}</td>
+                    <td>{{a.Rep}}</td>
+                    <td>{{a.Item}}</td>
+                    <td>{{a.Cost}}</td>
+                    <td>{{a.Units}}</td>
+                    <td>
+                        <a class="btn btn-info btn-sm ms-2" [routerLink]="[a._id]">view</a>
+                        <button class="btn btn-primary btn-sm ms-2">edit</button>
+                        <button class="btn btn-danger btn-sm ms-2">del</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+
