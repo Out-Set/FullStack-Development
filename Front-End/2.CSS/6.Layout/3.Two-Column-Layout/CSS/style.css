@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainbody{
+    height: 1000px;
+    width: 100%;
+    background-color: grey;
+}
+
+.header{
+    height: 150px;
+    width: 100%;
+    background: orange;
+    text-align: center;
+}
+
+.menu{
+    height: 50px;
+    width: 100%;
+    background: wheat;
+    text-align: center;
+}
+
+.center{
+    height: 700px;
+    width: 100%;
+    background: purple;
+    text-align: center;
+}
+
+.left{
+    height: 700px;
+    width: 20%;
+    background: blue;
+    text-align: center;
+    float: left;
+}
+
+.right{
+    height: 700px;
+    width: 80%;
+    background: purple;
+    text-align: center;
+    float: left;
+}
+
+.footer{
+    height: 100px;
+    width: 100%;
+    background: black;
+    text-align: center;
+    color: white;
+}
+
+
+
