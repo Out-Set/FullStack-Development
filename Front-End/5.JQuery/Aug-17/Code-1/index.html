@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+button{padding: 5px; border: none; background: red;}
+    </style>
+</head>
+<body>
+    <script src="jquery.js"></script>
+    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+    <!-- <button id="a">hide</button>
+    <button id="b">Show</button> -->
+    <button>hide/show</button>
+    <script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("h2").toggle(3000);
+    })
+})
+
+
+        /*
+$(document).ready(function(){
+    $("#a").click(function(){
+        $("h2").hide(4000);
+    })
+    $("#b").click(function(){
+        $("h2").show(4000);
+    })
+})
+*/ 
+
+
+
+        /*
+ $(document).ready(function(){
+    $("button").click(function(){
+        $("h2").hide(4000);
+    })
+})
+*/ 
+
+    </script>
+</body>
+</html>
+<!-- $(document).ready(function(){
+    $("selector").event(function(){
+        $("selector").action(time)
+    })
+})
+
+$(document).ready(()=>{
+    $("selector").event(()=>{
+        $("selector").action(time)
+    })
+}) -->
+<!-- hide,show,toggle 
+slideUp,slideDown,slideToggle
+fadeIn,fadeTo,fadeOut
+html,css,animate 
+addClass,removeClass 
+after,before,append,prepend 
+remove,empty, -->

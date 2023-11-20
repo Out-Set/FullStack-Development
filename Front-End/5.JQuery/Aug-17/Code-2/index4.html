@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        div{padding: 20px; width: 30%; border: solid;}
+    </style>
+</head>
+<body>
+   <script src="jquery.js"></script> 
+   <button>click</button>
+   <p>Lorem, ipsum dolor.</p>
+<!-- <div>
+    Lorem ipsum dolor sit, amet consectetur adipisicing.
+</div> -->
+   <script>
+$(document).ready(function(){
+    $("button").click(function(){
+        // $("p").after(" welcome ")
+        // $("p").before(" welcome ")
+        // $("p").append(" welcome ")
+        $("p").prepend(" welcome ")
+    })
+})
+
+
+
+
+
+    /*
+$(document).ready(function(){
+$("button").click(function(){
+// $("div").empty()
+$("div").remove()
+})
+})
+*/ 
+
+
+
+
+   </script>
+</body>
+</html>
