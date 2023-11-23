@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+span{padding: 5px; float: left; background: orange;}
+    </style>
+</head>
+<body>
+    <script src="jquery.js"></script>
+<p>
+    <span>hello</span>
+    <span>ducat</span>
+    <span>india</span>
+    <span>noida</span>
+    <span>sec</span>
+    <span>63</span>
+    <span>UP</span>
+</p>
+<br><br>
+<button>Click</button>
+
+    <script>
+
+$(document).ready(function(){
+
+    $("span").last().hide(1000,function(){
+        $(this).prev().last().hide(1000,arguments.callee);
+    });
+
+})
+
+
+/*
+$(document).ready(function(){
+$("button").click(function(){
+    $("span").last().hide(3000,function(){
+        $(this).prev().last().hide(3000,arguments.callee);
+    });
+})
+})
+*/ 
+
+
+
+
+
+        /*
+$(document).ready(function(){
+    $("button").dblclick(function(){
+        $("p").hide(4000,function(){
+            alert("hello")
+        });
+       
+    })
+})
+*/ 
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+    ul{list-style: none;}
+    li{display: inline; padding: 10px 20px;}
+.data{background: purple; color: white;}
+    </style>
+</head>
+<body>
+   <script src="jquery.js"></script> 
+<ul>
+    <li>Home1</li>
+    <li>Home2</li>
+    <li>Home3</li>
+    <li>Home4</li>
+    <li>Home5</li>
+    <li>Home6</li>
+</ul>
+   <script>
+$(document).ready(function(){
+$("li").mouseover(function(){
+    $(this).addClass("data")
+})
+$("li").mouseout(function(){
+    $(this).removeClass("data")
+})
+})
+
+
+
+
+
+   </script>
+</body>
+</html>

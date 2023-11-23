@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+div{height: 100px; width: 150px; background: red; display: none; }
+    </style>
+</head>
+<body>
+   <script src="jquery.js"></script> 
+   <button>click</button>
+   <div></div>
+   <script>
+$(document).ready(function(){
+$("button").click(function(){
+    // $("div").fadeTo(4000,0.3);
+    // $("div").fadeOut(4000);
+    $("div").fadeIn(4000)
+})
+})
+
+
+
+
+
+   </script>
+</body>
+</html>

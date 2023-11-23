@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+    span{color: red;}
+    </style>
+</head>
+<body>
+   <script src="jquery.js"></script> 
+
+<form name="frm">
+    Name:<br>
+    <span id="a"></span><br>
+    <input type="text" name="n">
+    
+    <br><br>
+    Pass:<br>
+    <span id="b"></span><br>
+    <input type="password" name="p">
+   
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+    if(document.frm.n.value==''){
+$("#a").html("name filed empty")
+
+    }
+  
+    if(document.frm.p.value==''){
+$("#b").html("password filed empty")
+
+    }
+    return false
+   
+})
+})
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
