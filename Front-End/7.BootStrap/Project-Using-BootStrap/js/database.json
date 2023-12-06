@@ -1,0 +1,92 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "Pname": "Smart Mobile",
+            "category": "mobile",
+            "subcategory":"samsung",
+            "price":22000,
+            "pimage":"../image/m1.jpg"
+        },
+        {
+            "id": 2,
+            "Pname": "Smart Mobile",
+            "category": "mobile",
+            "subcategory":"lg",
+            "price":20000,
+            "pimage":"../image/m2.jpg"
+        },
+        {
+            "id": 3,
+            "Pname": "Smart Mobile",
+            "category": "mobile",
+            "subcategory":"iphone",
+            "price":52000,
+            "pimage":"../image/m3.jpg"
+        },
+        {
+            "id": 4,
+            "Pname": "Smart Mobile",
+            "category": "mobile",
+            "subcategory":"samsung",
+            "price":19000,
+            "pimage":"../image/m4.jpg"
+        },
+        {
+            "id": 5,
+            "Pname": "Shirt",
+            "category": "shirt",
+            "subcategory":"man",
+            "price":2000,
+            "pimage":"../image/s1.jpg"
+        },
+        {
+            "id": 6,
+            "Pname": "Shirt",
+            "category": "shirt",
+            "subcategory":"woman",
+            "price":2200,
+            "pimage":"../image/s2.jpg"
+        },
+        {
+            "id": 7,
+            "Pname": "Shirt",
+            "category": "shirt",
+            "subcategory":"kids",
+            "price":800,
+            "pimage":"../image/s3.jpg"
+        },
+        {
+            "id": 8,
+            "Pname": "Shirt",
+            "category": "shirt",
+            "subcategory":"man",
+            "price":1000,
+            "pimage":"../image/s4.jpg"
+        },
+        {
+            "id": 9,
+            "Pname": "Smart Watch",
+            "category": "watch",
+            "subcategory":"manwatch",
+            "price":3600,
+            "pimage":"../image/w1.jpg"
+        },
+        {
+            "id": 10,
+            "Pname": "Smart Watch",
+            "category": "watch",
+            "subcategory":"womanwatch",
+            "price":2600,
+            "pimage":"../image/w2.jpg"
+        },
+        {
+            "id": 11,
+            "Pname": "Smart Watch",
+            "category": "watch",
+            "subcategory":"kidswatch",
+            "price":1800,
+            "pimage":"../image/w3.jpg"
+        }
+    ]
+}
