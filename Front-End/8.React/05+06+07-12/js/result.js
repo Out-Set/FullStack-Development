@@ -54,10 +54,9 @@ function filtercat(cat){
     document.getElementById("myrow").innerHTML=totaldata.join('')
 }
 
-
-function filtersubcat(subcat,cat){
+function filtermsubcat(mcat,cat){
    var msdata=result.filter((curele)=>{
-   return subcat===curele.subcategory && cat=== curele.category
+   return mcat===curele.subcategory && cat=== curele.category
    })
    var totaldata=msdata.map((item)=>{
     return(
@@ -79,31 +78,4 @@ function filtersubcat(subcat,cat){
     )
     })
     document.getElementById("myrow").innerHTML=totaldata.join('')
-}
-
-
-function pricefilter(maxprice){
-  var fdata=result.filter((curcat)=>{
- return maxprice>5000?curcat.price>maxprice:curcat.price<maxprice
-  })
-  var totaldata=fdata.map((item)=>{
-   return(
-       `
-       <div class="col">
-       <div class="card">
-         <img src=${item.pimage} class="card-img-top" alt="...">
-         <div class="card-body">
-           <h5 class="card-title">${item.Pname}</h5>
-           <p class="card-text">Price=Rs.${item.price}</p>
-           <p class="card-text">Category=${item.category}</p>
-           <p class="card-text">Sub-Category=${item.subcategory}</p>
-         </div>
-         <button class="btn btn-danger">Add to Cart</button>
-       </div>
-     </div>
-   
-   `
-   )
-   })
-   document.getElementById("myrow").innerHTML=totaldata.join('')
 }
