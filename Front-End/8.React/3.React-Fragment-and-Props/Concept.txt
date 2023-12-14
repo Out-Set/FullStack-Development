@@ -1,0 +1,25 @@
+
+#Note-1
+---------
+Use React Fragment, when you have multiple element t render
+<> elements  </>
+<React.Fragment> elements  </React.Fragment>  // For this -> import React from 'react';
+
+
+
+#Note-2
+--------
+Reuse a Component, Multiple times with React Fragment tag(<> jsx element </>)
+ReactDOM.render(
+  <>
+    <App/>
+    <App/>
+    <App/>
+    <App/>
+    <App/>
+  </>, document.getElementById("root"))
+  
+  
+  
+#Note-3
+--------

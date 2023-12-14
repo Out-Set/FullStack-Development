@@ -1,45 +1,19 @@
-
-
-
-import App from "./App";
-import ReactDOM from 'react-dom';
-ReactDOM.render(<App/>, document.getElementById("root"))
-
-
-
-
-
-
-/*
-import User from'./App';
-import ReactDOM from 'react-dom'
-
-ReactDOM.render(<User/>, document.getElementById("root"));
-*/
-
-
-
-
-
-
-/*
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from "./User";
+import ReactDOM from 'react-dom';
+ReactDOM.render(
+  <>
+    <App name="hari" age="30"/>
+    <hr/>
+    <App name="raman" age="38"/>
+    <hr/>
+    <App name="rohit" age="18"/>
+    <hr/>
+    <App name="shivam" age="12"/>
+    <hr/>
+    <App name="suman" age="25"/>
+    <hr/>
+  </>, document.getElementById("root"))
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
-*/
 
 
