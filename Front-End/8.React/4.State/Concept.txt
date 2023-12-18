@@ -1,0 +1,12 @@
+State: To update values in class based components.
+
+If you want to update some value, it should be in state.
+
+Definiing state
+---------------
+1. With constructor
+2. Without constructor
+
+
+#State or Simply Java-Script object
+
