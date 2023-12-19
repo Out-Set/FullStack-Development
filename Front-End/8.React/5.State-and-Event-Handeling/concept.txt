@@ -1,0 +1,28 @@
+Shortcut key to create Components
+=================================
+
+Download VS Code Extension:
+---------------------------
+Note: VS Code ES7 React/Redux/React-Native/JS snippets
+
+function based component: rfce 
+
+class based component: rcc  // no removal
+
+arrow function based component: rafc
+
+class based component: rccp  // some removal required
+
+
+
+State
+=====
+1. State without constructor
+2. State with constructor -> If you want to call before
+
+Event Handeling
+===============
+1. When we don't need to pass args to fun
+2. When we need to pass args to fun
+
+
