@@ -83,7 +83,7 @@ export default class App extends Component {
 */
 
 
-// Event Handling with class based component
+// Event Handling with function based component
 // When we need to pass args to fun
 /*
 import React from 'react';
