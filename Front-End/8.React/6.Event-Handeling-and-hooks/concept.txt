@@ -1,0 +1,9 @@
+Hooks: 
+======
+1. Predefined methods
+2. Starts with prefix 'use', like useState....
+
+Note:
+=====
+1. usestate hook returns an array, 
+   [variable, method] ---> i.e. let [data, setdata]
