@@ -1,4 +1,5 @@
 // Inline CSS with ternary operator
+/*
 import React,{useState} from 'react';
 
 function App() {
@@ -19,10 +20,11 @@ function App() {
 
 export default App;
 
+*/
 
 
 // Inline CSS
-/*
+
 import React from 'react';
 
 function App() {
@@ -48,7 +50,7 @@ function App() {
 
 export default App;
 
-*/
+
 
 
 

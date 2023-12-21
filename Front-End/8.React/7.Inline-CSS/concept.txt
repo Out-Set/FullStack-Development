@@ -1,0 +1,11 @@
+CSS:
+====
+
+Inline and Internal only
+
+Rest operator --> apply multiple css at once
+ style={{...data,...data2,textTransform:"uppserCase"}}
+
+// Inline CSS with ternary operator
+// Inline CSS
+
