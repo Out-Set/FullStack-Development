@@ -1,0 +1,17 @@
+.data1{
+    border: 2px solid black;
+    color: black;
+    background: red;
+    padding: 15px;
+    text-align: center;
+}
+
+.data2{
+    border: 2px solid blue;
+    color: blue;
+    background: orange;
+    padding: 15px;
+    text-align: center;
+}
+
+

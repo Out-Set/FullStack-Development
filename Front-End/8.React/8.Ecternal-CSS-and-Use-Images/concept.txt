@@ -1,0 +1,35 @@
+External CSS:
+=============
+
+Create a css file file-name.css
+Import it into your 
+
+import "./style.css"
+<h2 className='data data2'>App Function Component</h2>
+<p className='data2'>jsdk  diuas 8e eu8nx98jxn xasu hxiash xox</p>
+
+
+Apply image from src folder
+==========================
+1. import: import pic from './s2.jpg'
+2. Now use like it: <img src={pic} height="150px" width="200px" alt='...'/>
+
+
+
+
+Apply image from public folder
+===============================
+Note: React knows the path of public folder, you can directly use without import.
+like: <img src='image/s3.jpg' height="150px" width="200px" alt='...'/>
+(image is folder name which contains the image files, inside public folder)
+
+
+
+
+
+Lifecycle:
+==========
+Only class based components have lifecycle.
+1. Mounting: When component creates.
+2. Updating: When comp is updating.
+3. Unmounting: Deleting component permentantly from DOM.
