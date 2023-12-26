@@ -31,5 +31,8 @@ Lifecycle:
 ==========
 Only class based components have lifecycle.
 1. Mounting: When component creates.
-2. Updating: When comp is updating.
+2. Updating: When component is updating.
 3. Unmounting: Deleting component permentantly from DOM.
+
+
+
