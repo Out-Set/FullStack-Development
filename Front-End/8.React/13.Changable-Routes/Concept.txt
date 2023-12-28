@@ -1,0 +1,47 @@
+Changable routes of urls
+========================
+
+Hook: useParams
+===============
+
+import {useParams} form 'react-router-dom'
+
++++++++++++
+In Post.js
++++++++++++
+import React from 'react'
+import {useParams} from "react-router-dom"
+function Post() {
+   let{category} =useParams()
+  return (
+    <>
+    <h2>Post Component</h2>
+    <p>category name={category}</p>
+    </>
+  )
+}
+
+export default Post
+
+
+------------
+In Menu.js
+------------
+<li className="nav-item">
+	<Link className="nav-link" to="/post">Post</Link>
+</li>
+<li className="nav-item">
+	<Link className="nav-link" to="/post/mobile">Postmobile</Link>
+</li>
+<li className="nav-item">
+	<Link className="nav-link" to="/post/tv">PostTv</Link>
+</li>
+
+
+----------
+In App.js:
+----------
+<Route path='/post' element={<Post/>}/>
+<Route path='/post/:category' element={<Post/>}/>
+
+

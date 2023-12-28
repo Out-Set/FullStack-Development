@@ -1,0 +1,38 @@
+.header{
+    background: skyblue
+}
+
+.logo{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.logo h4{
+    align-self: center;
+    margin-left: 30%;
+}
+.navbar{
+    margin-left: 80%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.body{
+    border: 5px solid burlywood;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.showmore{
+    display: none;
+}
+
+.myfooter{
+    padding: 40px;
+    text-align: center;
+    background: black;
+    color: white;
+}
