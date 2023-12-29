@@ -1,4 +1,5 @@
-// useEffect
+// 4.useEffect
+
 import React,{useState, useEffect} from 'react';
 
 function App() {
@@ -33,61 +34,80 @@ export default App;
 
 
 
-// Form Submit and get value
+// 3.Form Submit and get value
 /*
-import React from 'react';
+import React, { useState } from 'react'
 
 function App() {
+
+  let submit = (e) => {
+    // console.log(e);
+    // console.log(e.target);
+    console.log(e.target[0].value);
+    console.log(e.target[1].value);
+    e.preventDefault()
+  }
+
   return (
-    <d>
+    <>
       <form onSubmit={submit}>
-        Name: <input type='text' name='name'/>
+        Name:
+        <input type="text" name="name" />
+        <br /><br />
+        Password:
+        <input type="password" name="password" />
+        <br /><br />
+        <input type="submit" />
       </form>
-    </d>
-  );
+
+    </>
+  )
 }
 
-export default App;
+export default App
 */
 
 
-// Using only one function(i.e. show), to show name and pass
+
+// 2.Using only one function(i.e. show), to show name and pass
 /*
-import React,{useState} from 'react';
+import React, { useState } from 'react'
 
 function App() {
-  let obj= {
+  let obj = {
     name: '',
     password: ''
   }
-  
   let [values, setvalues] = useState(obj)
-
-  let show=(e)=>{
-    let {name, value} = e.target;
+  let show = (e) => {
+    let { name, value } = e.target;
     setvalues({
       ...values,
-      [name]:value
+      [name]: value
     })
   }
   return (
     <>
       <form>
-        <input type='text' name='name' onChange={show}/>
-        <input type='password' name='name' onChange={show}/>
-      </form>
+        Name:
+        <input type="text" name="name" onChange={show} />
+        <br /><br />
+        Password:
+        <input type="password" name="password" onChange={show} />
 
-      <p>Name: {values.name}</p>
-      <p>Password: {values.password}</p>
+      </form>
+      <p>{values.name}----{values.password}</p>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
 */
 
 
-// show name and pass with different different function(i.e. showName() & showPassword())
+
+
+// 1.Show name and pass with different different function(i.e. showName() & showPassword())
 /*
 import React,{useState} from 'react';
 
@@ -97,18 +117,19 @@ function App() {
   let [password,setpassword] = useState('')
 
   let showName=(e)=>{
-    name = e.target:setname
+    setname(name=e.target.value)
   }
 
   let showPassword=(e)=>{
-    
+    setpassword(password=e.target.value)
   }
 
   return (
     <>
       <form>
-        <input type='text' name='name' onChange={showName}/>
-        <input type='text' name='name' onChange={showPassword}/>
+      <br/>
+        Name: <input type='text' name='name' onChange={showName}/><br/><br/>
+        Password: <input type='password' name='password' onChange={showPassword}/><br/><br/>
       </form>
 
       <p>Name: {name}</p>
