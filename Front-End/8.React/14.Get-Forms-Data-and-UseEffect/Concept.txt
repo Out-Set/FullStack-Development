@@ -1,0 +1,15 @@
+Form:
+=====
+1.Get form values
+2.Submit form and get data of filled form
+
+
+
+
+useEffect: Gives a callback function
+=====================================
+import {useEffect} from 'react';
+
+1. Will be called every time
+
+
