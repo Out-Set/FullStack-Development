@@ -1,0 +1,28 @@
+1.Setup JSON-Server:
+====================
+
+Install: npm install json-server
+
+Run: json-server --watch database.json
+
+
+2.Maintain folder structure:
+============================
+src
+  common
+    ->Header.js
+    ->Footer.js
+    ->Menu.js
+
+  pages
+    ->Home.js
+    ->Create.js
+    ->Read.js
+    ->Update.js
+    ->Search.js
+
+  App.js
+  index.js
+
+3.Do Routing in App.js:
+=======================
