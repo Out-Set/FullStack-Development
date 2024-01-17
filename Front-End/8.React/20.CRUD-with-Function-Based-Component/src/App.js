@@ -6,17 +6,19 @@ function App() {
   let [roll, setroll] = useState()
   let [age, setage] = useState()
   let [email, setemail] = useState()
+
   useEffect(() => {
-    axios.get("http://localhost:3000/students").then((res) => {
-      // console.log(res.data);
-      setuser(res.data)
-    })
-  })
+    axios.get('http://localhost:3000/students').then((res) => {
+      setuser(res.data);
+    });
+  }, []); // Provide an empty dependency array to run the effect only once
+
   let deleteuser = (sno) => {
     axios.delete("http://localhost:3000/students/" + sno).then((res) => {
       console.log(res.data);
     })
   }
+
   let submituser = (e) => {
     e.preventDefault()
     axios.post("http://localhost:3000/students/", {
@@ -25,6 +27,7 @@ function App() {
       console.log(res.data);
     })
   }
+  
   return (
     <>
       <div>
