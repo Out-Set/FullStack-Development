@@ -1,0 +1,12 @@
+
+In function Based:
+==================
+componentDidMount == useEffect
+
+
+
+Json-Server:
+============
+Install: npm install json-server
+
+Run: json-server --watch database.json

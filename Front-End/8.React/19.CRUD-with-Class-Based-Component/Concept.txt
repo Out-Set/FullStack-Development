@@ -26,3 +26,29 @@ src
 
 3.Do Routing in App.js:
 =======================
+
+
+
+Used Things:
+============
+componentDidMount: fetch API type data
+
+
+
+For icons:
+==========
+Google: React Icons(3rd party)
+install: npm install react-icons
+
+
+
+Doploy on GitHUb:
+=================
+
+npm install gh-pages
+
+
+Middle-Ware:
+============
+pages --> withRoutes.js
+To get id for update operatiion

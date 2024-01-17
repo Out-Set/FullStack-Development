@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Rohit Kumar",
+      "RollNo": 52,
+      "age": 20,
+      "email": "rohit@email.com"
+    },
+    {
+      "id": "2",
+      "name": "Rajat T",
+      "RollNo": 23,
+      "age": 25,
+      "email": "rajat@email.com"
+    },
+    {
+      "id": "3",
+      "name": "Roman",
+      "RollNo": 2,
+      "age": 18,
+      "email": "roman@email.com"
+    }
+  ]
+}
