@@ -1,0 +1,10 @@
+Session:
+
+Cookie: is a text file stored on user machine.
+
+Install: npm i reaect-cookie
+
+import { CookieProvider, usecookie } from react-cookie
+
+Template:
+<CookieProvider> </CookieProvider>
