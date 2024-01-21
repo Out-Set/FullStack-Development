@@ -1,0 +1,23 @@
+src-1
+++++++
+
+Session  Storage in React:
+===========================
+
+Install: npm install session-storage
+
+
+sessionStorage.setItem("age",42)
+let result= sessionStorage.getItem("age")
+sessionStorage.removeItem("age")
+
+
+
+
+
+src-2
+++++++
+Authentication:
+===============
+
+Auth0.com
