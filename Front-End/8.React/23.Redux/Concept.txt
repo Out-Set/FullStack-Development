@@ -1,0 +1,30 @@
+Redux:
+======
+
+You can access the values at any level, with the help of redux.
+
+Goto: reduxjs.org
+
+Earlier React-redux was used now Redux-toolkit are used.
+
+Choose: Redux-toolkit
+======================
+
+npm install @reduxjs/toolkit
+npm install react-redux
+
+Now Quick-start
+================
+1.Create a Redux Store
+  
+2.Provide the Redux Store to React
+
+3.Create a Redux State Slice
+   (name, value, userFunction)
+Reducer-function: Create only iff you need to update the value.
+
+4.Add Slice Reducers to the Store
+
+5.Use Redux State and Actions in React Components
+   i)useSelector(to get value)
+  ii)useDispatch(to get method)
