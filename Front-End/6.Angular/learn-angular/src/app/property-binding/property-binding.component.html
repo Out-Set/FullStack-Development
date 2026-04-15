@@ -1,0 +1,14 @@
+<div>
+    <h2>6.Property Binding</h2>
+    <p>It is used to change the change or update the property or attribute.</p>
+    <p>Same thing we can achieve through Interpolation, but interpolation doesn't work well with boolean value, work well only with string and number value.</p>
+
+    <input type="text" name="user-name" value="{{ name }}" disabled="{{ disable }}">Through Interpolation <br>
+    <p>Here, in Interpolation it is treating disable variable(in .ts file) value as a string not boolean type.</p>
+
+    <input type="text" name="user-name" [value]=name [disabled]=disable>Through Property Binding <br>
+    <button (click)="toggle()">Toggle</button>
+    <p>If you will change the value of disable variable(in .ts file) to true, input box will be disabled and vice versa.</p>
+
+    <h4>Note: To change the property and attribute always use property binding.</h4>
+</div>

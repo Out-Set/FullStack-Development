@@ -1,0 +1,33 @@
+div{
+    background: skyblue;
+    padding: 10px;
+}
+
+button, input, p, h4, h3{
+    margin: 5px;
+    height: 35px;
+}
+
+nav img{
+    width: 70px; 
+}
+
+nav{
+    background-color: lightcyan;
+    padding: 10px;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+}
+
+ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+li a{
+    text-decoration: none;
+    color: orange;
+}

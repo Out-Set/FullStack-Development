@@ -1,0 +1,15 @@
+<div>
+    <h2>7.If-Else in Angular</h2>
+
+    <h1 *ngIf="show; then ifBlock else elseBlock"></h1>
+
+    <ng-template #ifBlock>
+        <h1>If Condition</h1>
+    </ng-template>
+
+    <ng-template #elseBlock>
+        <h1>Else Condition</h1>
+    </ng-template>
+
+    <button (click)="toggle()">Toggle</button>
+</div>

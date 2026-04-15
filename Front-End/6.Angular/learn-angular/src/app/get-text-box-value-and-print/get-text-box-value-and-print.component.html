@@ -1,0 +1,15 @@
+<div>
+    <h2>3.Get Text Box Value And Print</h2>
+
+    <input type="text" (keyup)="getValue(box.value)" #box placeholder="Enter Name" name="name"><br>
+    <button (click)="getValue(box.value)">Get value of input box</button>
+    <button (click)="getValue(box.name)">Get name of input box</button>
+    <button (click)="getValue(box.placeholder)">Get placeholder of input box</button>
+
+    <p>Box Value is: {{ displayVal }}</p>
+
+    <h4>Note: </h4>
+    <h4>We can also get  the input box value with two-way-binding, will see later.</h4>
+    <h4>We can also get the value of name and placeholder. </h4>
+    <p>Like id.name or id.placeholder, in our case box.name or box.placeholder</p>
+</div>

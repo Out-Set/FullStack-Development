@@ -1,0 +1,14 @@
+<div>
+    <h2>2.Events in Angular</h2>
+
+    <button (click)="getData('click event')">click event</button><br>
+
+    <input type="text" #box (keyup)="getData(box.value)" placeholder="keyup event"><br>
+    <input type="text" #box1 (keydown)="getData(box1.value)" placeholder="keydown event"><br>
+    <input type="text" #box2 (blur)="getData(box2.value)" placeholder="blur event"><br>
+    <input type="text" #box3 (input)="getData(box3.value)" placeholder="input event"><br>
+    <p (mouseover)="getData('over')">mouseover event</p>
+    <p (mouseleave)="getData('leave')">mouseleave event</p>
+
+    <h4>Note: We can use more than one event on the same tag. </h4>
+</div>

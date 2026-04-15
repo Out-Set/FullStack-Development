@@ -1,0 +1,16 @@
+<div>
+    <h2>13.Nornal Form</h2>
+
+    <form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+        
+        <input type="text" ngModel name="user" placeholder="Enter Name" ><br>
+        <input type="text" ngModel name="email" placeholder="Enter Email" ><br>
+        <input type="password" ngModel name="password" placeholder="Enter Password" ><br>
+
+        <button>Register</button>
+    </form>
+
+    <p>Name: {{ userData.user }}</p>
+    <p>Email: {{ userData.email }}</p>
+    <p>Password: {{ userData.password }}</p>
+</div>
