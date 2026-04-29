@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function effect()
+		{
+			var x=document.getElementById("para1");
+			alert(x); //[object HTMLParagraphElement]
+			alert(x.tagName); //p
+			alert(x.innerHTML); //This is a paragraph.
+			x.innerHTML="This is modified paragraph." //This is modified paragraph.
+		}
+		
+	</script>
+	<title>Event-Handeling</title>
+</head>
+<body>
+	<h1>Event-Handeling</h1>
+	<h2>Example....of getElementById();</h2>
+	<h4>To change the background of an HTML-paragraph, when mouse hovers upon the paragraph.</h4>
+
+	<p id="para1">This is a paragraph.</p>
+	<button onclick="effect()">Click here</button>
+</body>
+</html>

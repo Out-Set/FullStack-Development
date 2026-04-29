@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="intro">heading 1</h2>
+    <p>paragraph 1</p>
+    <h2>heading 2</h2>
+    <p>paragraph 2</p>
+    <h2 class="intro">heading 3</h2>
+    <p>paragraph 3</p>
+
+    <script>
+        let ele1 = document.querySelector('h2.intro');
+        console.log(ele1)
+        ele1.innerHTML = '<button>hi</button>'
+
+
+        let ele2 = document.querySelectorAll('h2.intro');
+        console.log(ele2);
+        for(let i in ele2){
+            ele2[i].innerHTML = "this is a heading"
+        }
+    </script>
+</body>
+</html>

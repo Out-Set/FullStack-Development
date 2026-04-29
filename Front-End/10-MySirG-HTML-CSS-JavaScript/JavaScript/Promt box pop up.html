@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		h2
+		{
+			color: brown;
+		}
+		#popup
+		{
+			text-decoration: underline;
+			color: blue;
+		}
+		body
+		{
+			background-color: lightblue;
+		}
+	</style>
+	<title>Prompt box pop-up</title>
+</head>
+<body>
+	<h1 style="text-decoration: underline;color: red;">Prompt box pop-up</h1>
+	<h2>A prompt box is often used , if you want the user to input a value before entering a page.</h2>
+	<h2>When an prompt box pops-up, <span id="popup">user will have to click either "OK" or "CANCEL"to proceed</span>, after entering a input.</h2>
+	<h2>If the user clicks <span id="popup">"OK"</span>, the box returns the <span id="popup">Input-value</span>.</h2>
+	<h2>If the user clicks <span id="popup">"CANCEL"</span>, the box returns <span id="popup">Null</span>.</h2>
+	<h2>It is used as: <span id="popup">promt("message to show on alert box","default value");</span></h2>
+	<h2>The 2nd(<span id="popup">default value</span> ) argument is optional.</h2>
+	<h2>It is used when we needs conermation from  users.</h2>
+
+	<script type="text/javascript">
+		var x=prompt("Enter a no which table you want","5");
+		for(i=1;i<=10;i++)
+		{
+			if(x!=null)
+			document.write("<br/>"+x+" x "+i+" = "+x*i);
+		}
+		
+	</script>
+
+</body>
+</html>

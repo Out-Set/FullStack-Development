@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <u>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li id="four">list 4</li>
+    </u>
+
+    <script>
+        let elm = document.getElementById('four');
+        console.log(elm.innerHTML);
+        elm.innerHTML = '<p> hello </p>';
+    </script>
+</body>
+</html>

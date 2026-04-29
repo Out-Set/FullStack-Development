@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		form
+		{
+			color: khaki;
+			font-weight: bold;
+		}
+		body
+		{
+			background-image: url(blue-planets-27206-1920x1080.jpg);
+		}
+		h1
+		{
+			color: red;
+			text-decoration: underline;
+		}
+		h2
+		{
+			color: pink;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function validate()
+		{
+			var result=true;
+			var atindex, dotindex, e;
+			e=document.getElementsByName("email")[0].value;
+			atindex=e.indexOf('@');
+			dotindex=e.lastIndexOf('.');
+
+			if(atindex<1 || dotindex>=e.length-2 || dotindex-atindex<3)
+			{
+				alert("invalid email");
+				result=false;
+			}
+			return(result);
+
+			if(result=true)
+			{
+				document.get("You got registered successfully");
+			}
+		}	
+	</script>
+
+	<title>Accessing HTML form data in php</title>
+</head>
+<body>
+	<center>
+	<h1>Accessing HTML form data in php</h1>
+	<h2>Login-Form</h2>
+	<hr>
+	<h1 style="text-shadow: 12px -18px 5px green;">Welcome!</h1>
+
+	<form onsubmit="return validate()" action="login.php" method="post">
+		Name:<input type="text" placeholder="first name" name="firstname" required>
+		<input type="text" placeholder="last name" name="lastname"><br/><br/>
+		E-mail:<input type="text" placeholder="Your e-mail" name="email" required>
+		Mobile-No:<input type="number" placeholder="Contact no" name="mobileNo" required><br/><br/>
+		User name:<input type="text" placeholder="Choose username" name="username" required>
+		<input type="password" placeholder="password" name="password" required><br/><br/>
+		Gender:M<input type="radio" type="M" name="gender">
+		F<input type="radio" type="F" name="gender">
+		Other<input type="radio" type="O" name="gender"><br/><br/>
+		<input type="submit" name="submit">
+		<input type="reset" name="reset">
+	</form>
+	</center>
+
+	<h2><marquee direction="right">Hi..Nice to see you.</marquee></h2>
+	<marquee direction="left" scrollamount="25"><img src="Screenshot (547).png"><img src="Screenshot (548) - Copy.png"></marquee>
+	<marquee direction="left"></marquee>
+</body>
+</html>

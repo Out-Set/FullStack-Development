@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		h1
+		{
+			text-decoration: underline;
+			color: red;
+		}
+		h2
+		{
+			color: green;
+		}
+		ul
+		{
+			color: brown;
+		}
+		ol
+		{
+			color: brown;
+		}
+		ul #underline
+		{
+			text-decoration: underline;
+			color: orange;
+		}
+	</style>
+	<title>POSITIONING OF HTML ELEMENT</title>
+</head>
+<body>
+	<h1>POSITIONING OF HTML ELEMENT</h1>
+	<h2>Why positioning is important?</h2>
+	<h5>Because....</h5>
+	<ul>
+		<li>By default, HTML element appears on the web page in the same sequence as they are in the HTML-code.</li>
+		<li>So that, HTML is not capable to set position of HTML-element with precision.</li>
+	</ul>
+
+	<h2>Position-Property</h2>
+	<h2>The position property specifies the types of POSITIONING.</h2>
+	<h3>It has 4-types.</h3>
+	<ol>
+		<li>Position-Static;    //By-Default//</li>
+		<li>Position-fixed;</li>
+		<li>Position-relative;</li>
+		<li>Position-absolute;</li>
+	</ol>
+
+	<h2>POSITIONING</h2>
+	<ul>
+		<li>Elements are then positioned using top,bottom,left and right property.</li>
+		<li>#Those properties will not work, unless the position-property is set first(value should not be static).</li>
+		<li>They also work differently depending on the position value.</li>
+	</ul>
+
+	<h2>1.Static</h2>
+	<ul>
+		<li id="underline">HTML elements are positioned static by-default.</li>
+		<li>So that, top,bottom,left and right property will not work here.</li>
+		<li>Element will appear, according to the <span id="underline">normal flow</span>.</li>
+	</ul>
+
+	<h2>2.Fixed</h2>
+	<ul>
+		<li>Element with position-fixed always stays in the same place, even if the page is <span id="underline">scrolled</span>.</li>
+		<li>top,bottom,left and right property will work.</li>
+		<li>It can be set as....<span id="underline">position: fixed;</span></li>
+	</ul>
+
+	<h2>3.relative</h2>
+	<ul>
+		<li>An element with <span id="underline">position: relative;</span> is positioned relative to it's normal position.</li>
+		<li>Top,right,bottom,left will work.</li>
+	</ul>
+
+	<h2>4.Absolute</h2>
+	<ul>
+		<li>A <span id="underline">positioned</span> element is one whose position is anything except <span id="underline">static</span>.
+		</li>
+		<li>An Absolute-positional element is positional, relative to the nearest <span id="underline">positional-Ancestor</span>.</li>
+		<li>If an Absolute-positional element has no <span>positioned-Ancestors</span>, it uses the document body, and <span id="underline">moves along with the page scrolling</span>.</li>
+	</ul>
+
+	<h2># Z-Index</h2>
+	<ul>
+		<li>When element are positioned, they can overlaps other elements.</li>
+		<li>The <span id="underline">Z-index</span> property specifies the <span id="underline">stack order of an element.</span></li>
+		<li>An element <span id="underline">With greater stack order</span> is always in <span id="underline">front</span> of an element <span id="underline">with a lower stack order.</span></li>
+		<li>If two positioned element <span id="underline">overlaps without a Z-index specified</span>, the element positioned last in the HTML code, will be shown on Top.</li>
+		<li>By-Default the value of Z-index is zero.</li>
+	</ul>
+
+	<h2><a href="Example Positioning of HTML elements.html">Click here to see the examples...</a></h2>
+</body>
+</html>

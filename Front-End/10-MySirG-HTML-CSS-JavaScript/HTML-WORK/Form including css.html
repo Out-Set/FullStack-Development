@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		h1
+		{
+			color: violet;
+			text-decoration: underline;
+		}
+		body
+		
+		{
+			background-image: url("a.jpg");
+		}
+		#table
+		{
+			background-color: lightblue;
+		}
+	</style>
+	<title>Form</title>
+
+	<script type="text/javascript">
+		function validate()
+		{
+			var result=true;
+			var atindex, dotindex, e;
+			e=document.getElementsByName("email")[0].value;
+			atindex=e.indexOf('@');
+			dotindex=e.lastIndexOf('.');
+
+			if(atindex<1 || dotindex>=e.length-2 || dotindex-atindex<3)
+			{
+				alert("invalid email");
+				result=false;
+			}
+			return(result);
+
+			if(result=true)
+			{
+				document.get("You got registered successfully");
+			}
+
+		}	
+	</script>
+
+</head>
+<body>
+
+	<center>
+
+	<h1>Registration Form and login creation</h1>
+	<hr>
+	<form onsubmit="return validate()">
+		<table id="table">
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" name="first name" required maxlength="5"></td>
+				<td>Last Name</td>
+				<td><input type="text" name="last name"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password" required></td>
+				<td>Conferm</td>
+				<td><input type="password" name="Confermpassword" required></td>
+			</tr>
+			<tr>
+				<td>Email id</td>
+				<td><input type="text" name="email" required /></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="Gender">M
+				    <input type="radio" name="Gender">F
+				    <input type="radio" name="Gender">Other</td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td><select>
+					<option>Delhi</option>
+					<option>Noida</option>
+					<option>Gurgaon</option>
+					<option>Ghaziabad</option>
+					<option>Merrut</option>
+					<option>Lucknow</option>
+					<option>Mumbai</option>
+					<option>kanpur</option>
+					<option>Varanasi</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Courses</td>
+				<td><input type="checkbox" name="Qualification">java
+				    <input type="checkbox" name="Qualification">php
+				    <input type="checkbox" name="Qualification">cpp</td>
+			</tr>
+			<tr>
+				<td>Highest Qualification</td>
+				<td><select>
+					<option>B.TECH</option>
+					<option>M.TECH</option>
+					<option>BCA</option>
+					<option>MCA</option>
+					<option>Others</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>If Others(please specify)</td>
+				<td><input type="text" name="Other Qualification"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit">
+				    <input type="reset" name="reset"></td>
+			</tr>
+		</table>
+	</form>
+
+</center>
+
+<h3>Fill this form to get registered.</h3>
+<img src="Screenshot (547).png" style="float: right;">
+
+</body>
+</html>

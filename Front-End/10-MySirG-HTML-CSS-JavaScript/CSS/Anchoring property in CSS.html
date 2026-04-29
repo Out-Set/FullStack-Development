@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#link
+		{
+			text-decoration: underline;
+			color: brown;
+		}
+		ol
+		{
+			color: blue;
+		}
+		a:visited
+		{
+			color: green;
+		}
+		a:hover
+		{
+			color: yellow;
+		}
+		a:active
+		{
+			color: brown;
+		}
+		body
+		{
+			color: lightblue;
+		}
+	</style>
+	<title>Anchoring property in CSS</title>
+</head>
+<body>
+	<h1>Anchoring property in CSS</h1>
+	<h2>By Default.....</h2>
+	<ul>
+		<li>Unvisited Links: <span style="color: blue;text-decoration: underline;">Blue Color</span>.</li>
+		<li>When Clicked: <span style="color: red;text-decoration: underline;">Red Color</span>.</li>
+		<li>Visited Links: <span style="color: purple;text-decoration: underline;">Purple Color</span>.</li>
+		<li>i.e.  <a href="https://www.google.com/">This is a link</a></li>
+	</ul>
+	<h2>We have 4-types of link states.</h2>
+	<ol>
+		<li><span id="link">a:link</span>-A normal unvisited link.</li>
+		<h4>i.e.  <a href="https://www.google.com/">This is a link</a> </h4>
+
+		<li><span id="link">a:visited</span>-A link the user has visited.</li>
+		<h4>i.e.  <a href="https://www.google.com/">This is a link</a></h4>
+
+		<li><span id="link">a:hover</span>-A link when the user mouses over it.</li>
+		<h4>i.e.  <a href="https://www.google.com/">This is a link</a></h4>
+
+		<li><span id="link">a:active</span>-A link the moment it's clicked.</li>
+		<h4>i.e.  <a href="https://www.google.com/">This is a link</a></h4>
+	</ol>
+	
+</body>
+</html>

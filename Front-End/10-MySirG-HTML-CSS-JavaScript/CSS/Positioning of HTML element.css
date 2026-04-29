@@ -1,0 +1,45 @@
+#header
+{
+
+	width: 600px;
+	height: 1000px;
+	background-color: lightblue;
+}
+#header .head
+{
+	position: fixed;
+	top: 70px;
+	width: 600px;
+	height: 200px;
+	background-color: pink;
+}
+#zindex
+{
+	position: absolute;
+	background-color: silver;
+	width: 100px;
+	height: 100px;
+	top: 500px;
+	left: 500px;
+}
+#header .head h2
+{
+	position: relative;
+	color: red;
+	left: 210px;
+	top: 50px;
+}
+#header h1
+{
+	position: relative;
+	left: 150px;
+	top: 200px;
+	color: green;
+}
+#header h3
+{
+	position: fixed;
+	color: blue;
+	top: 400px;
+	left: 100px;
+}

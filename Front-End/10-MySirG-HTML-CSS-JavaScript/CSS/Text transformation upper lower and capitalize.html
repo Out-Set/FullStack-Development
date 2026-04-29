@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		p.upp
+		{
+			text-transform: uppercase;
+			color: red;
+		}
+		#sml
+		{
+			text-transform: lowercase;
+			color: green;
+		}
+		#cptl
+		{
+			text-transform: capitalize;
+			color: blue;
+		}
+	</style>
+	<title>Text transformation</title>
+</head>
+<body>
+	<h1 style="text-decoration: underline;color: red;">Text transformation</h1>
+	<h2>It can be done by 3-ways....</h2>
+	<ul style="text-decoration: underline;color: indigo;">
+		<li>p.upercase{text-transform: uppercase;}</li>
+		<li>p.lowercase{text-transform: lowercase;}</li>
+		<li>p.capitalize{text-transform: capitalize;}</li>
+	</ul>
+	<h3 style="text-decoration: underline;">p.uppercase/lowercase/capitalize means: A paragraph whose group's attribute value is uppercase/lowercase/capitalize only that paragraph will be consider.</h3>
+
+	<h3>Initially the pragraphs are.....</h3>
+	<p>This is a paragraph.</p>
+	<p>This iS ANOTHER paraGRaph.</p>
+	<p>This is one another paragraph.</p>
+	<p>heLLO EVerYOne.</p>
+
+	<h3>After transform.....</h3>
+	<p class="upp">This is a paragraph.</p>
+	<p id="sml">This is another paragraph.</p>
+	<p id="cptl">This is one another paragraph.</p>
+	<p class="upp">heLLO EVerYOne.</p>
+
+</body>
+</html>

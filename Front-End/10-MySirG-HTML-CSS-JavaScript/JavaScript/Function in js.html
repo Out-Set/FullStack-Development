@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		h1
+		{
+			text-decoration: underline;
+			color: red;
+		}
+		h2
+		{
+			color: blue;
+		}
+		h3
+		{
+			text-decoration: underline;
+			color: orange;
+		}
+		h4
+		{
+			color: brown;
+		}
+		#underline
+		{
+			text-decoration: underline;
+			color: red;
+		}
+		ul
+		{
+			color: green;
+		}
+		ol
+		{
+			color: green;
+		}
+		body
+		{
+			background-color: pink;
+		}
+	</style>
+	<title>Function in JavaScript</title>
+</head>
+<body>
+	<h1>Function in JavaScript</h1>
+	<h3>Function is a block of code, designed to perform various tasks.</h3>
+	<h4>how to create a function...</h4>
+	<p>function <span id="underline">functionName</span> (variable list){<br/> // code here... <br/>}</p>
+
+	<h2>Function Execution</h2>
+	<h4>A function is executed when....</h4>
+	<ul>
+		<li>Function is invoked from another js-function.</li>
+		<li>Function is <span id="underline">attached</span> with some <span id="underline">event</span> and <span id="underline">event occurs</span>.</li>
+	</ul>
+
+	<h2>Why Function..??</h2>
+	<ul>
+		<li>You can <span id="underline">reuse</span> it.</li>
+		<li>Script inside function is not executed untilfunction is <span id="underline">invoked</span>.</li>
+	</ul>
+
+	<h2>Variable in the function</h2>
+	<ol>
+		<li>local:  Declared with <span id="underline">var-keyword</span>.</li>
+		<li>Global: Declared without <span id="underline">var-keyword</span>.</li>
+	</ol>
+	<p>function <span id="underline">functionName</span> (variable list)<br/>{<br/> var x; ]-->Local variable <br/> y=5; ]-->Global variable<br/>}</p>
+
+	<h4>Example.... Click on Hi..</h4>
+	<script type="text/javascript">
+		function wishing()
+		{
+			document.write("Hello Everyone<br/>");
+			document.write("Have a nice day!!!");
+		}
+	</script>
+	<button onclick="wishing()">Hi..</button>
+
+	<h2>Returning Value</h2>
+	<ul>
+		<li>Function may return a value using <span id="underline">Keyword-return</span>.</li>
+		<li>Function can only return <span id="underline">one-value</span>.</li>
+		<li>Once a function returns a value <span id="underline">control returns back</span> to the <span id="underline">Caller</span>.</li>
+	</ul>
+
+	<h4>Example....How to add two no with the help of function</h4>
+	<script type="text/javascript">
+		function sum(a,b)
+		{
+			return (a+b);
+		}
+	</script>
+	<script type="text/javascript">
+		var s=sum(3,4);
+		document.write("sum of 3 and 4 is" +s);
+	</script>
+
+</body>
+</html>

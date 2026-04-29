@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function effect()
+		{
+			document.getElementById("para1").style.backgroundColor="blue";
+		}
+		function effectback()
+		{
+			document.getElementById("para1").style.backgroundColor="white";
+		}
+	</script>
+	<title>Event-Handeling</title>
+</head>
+<body>
+	<h1>Event-Handeling</h1>
+	<h2>Example....</h2>
+	<h4>To change the background of an HTML-paragraph, when mouse hovers upon the paragraph.</h4>
+
+	<p id="para1" onmouseover="effect()" onmouseout="effectback()" >This is a paragraph.</p>
+</body>
+</html>

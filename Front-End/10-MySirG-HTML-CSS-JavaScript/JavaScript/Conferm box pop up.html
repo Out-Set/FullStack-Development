@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		h2
+		{
+			color: brown;
+		}
+		#popup
+		{
+			text-decoration: underline;
+			color: blue;
+		}
+		body
+		{
+			background-color: pink;
+		}
+	</style>
+	<title>Alert box pop-up</title>
+</head>
+<body>
+	<h1 style="text-decoration: underline;color: red;">Confirm box pop-up</h1>
+	<h2>When an Coferm box pops-up, <span id="popup">user will have to click either "OK" or "CANCEL"to proceed</span>.</h2>
+	<h2>If the user clicks <span id="popup">"OK"</span>, the box returns <span id="popup">True</span>.</h2>
+	<h2>If the user clicks <span id="popup">"CANCEL"</span>, the box returns <span id="popup">False</span>.</h2>
+	<h2>It is used as: <span id="popup">confirm("message to show on alert box");</span></h2>
+	<h2>It is used when we needs conermation from  users.</h2>
+
+	<script type="text/javascript">
+		var x=confirm("Do you want to proceed with light-blue background.");
+		if(x)
+			document.getElementsByTagName("body")[0].style.backgroundColor="lightblue";
+	</script>
+
+</body>
+</html>

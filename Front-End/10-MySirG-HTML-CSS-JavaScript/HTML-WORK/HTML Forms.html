@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+</head>
+<body>
+	<h3>Admission Form and login creation</h3>
+	<hr width="75%">
+
+	<form action="somefile.php" method="post" >
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="Your name"></td>
+			</tr>
+
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="Your password"></td>
+			</tr>
+
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="Gender">M <input type="radio" name="Gender">F</td>
+			</tr>
+
+			<tr>
+				<td>Qualification</td>
+				<td><select>
+					<option>B.TECH</option>
+					<option>BCA</option>
+					<option>M.TECH</option>
+					<option>MCA</option>
+					<option>Others</option> </select>
+				    Please provide<input type="text" name="Qualification"></td>
+			</tr>
+
+			<tr>
+				<td>Courses</td>
+				<td><input type="checkbox" name="PHP">PHP
+				    <input type="checkbox" name="C">C
+				    <input type="checkbox" name="C++">C++
+				    <input type="checkbox" name="JAVA">JAVA
+				    <input type="checkbox" name="PYTHON">PYTHON
+				    <input type="checkbox" name="C#">C#
+				    <input type="checkbox" name="RUBY">RUBY
+				    <input type="checkbox" name="AI">AI
+				    <input type="checkbox" name="DS">DS</td>
+			</tr>
+
+			<tr>
+				<td>City</td>
+				<td><select>
+					<option>DELHI</option>
+					<option>NOIDA</option>
+					<option>GURGAON</option>
+					<option>GHAZIABAD</option>
+					<option>MERRUT</option>
+				</select></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" name="submitted">
+					<input type="reset" name="reset"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

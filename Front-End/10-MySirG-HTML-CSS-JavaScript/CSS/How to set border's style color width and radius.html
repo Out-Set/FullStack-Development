@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		h2
+		{
+			color: blue;
+			font-weight: 5px;
+		}
+		#h
+		{
+			color: brown;
+
+		}
+		p
+		{
+			text-decoration: underline;
+		}
+		ul
+		{
+			color: green;
+		}
+	</style>
+	<title>How to set border's style color width and radius</title>
+</head>
+<body>
+
+	<h2>Example</h2>
+	<a href="border's style color width and radius example.html">Click here to see the example.</a>
+
+	<h1 style="text-decoration: underline;color: red;">How to set border's Style/Color/Width/Radius</h1>
+	<h2>1.Border-Style</h2>
+	<ul>
+		<li>Every HTML element that consumes space on the web page, is a rectangular region.</li>
+		<li>This rectangular region can be bordered using CSS-properties.</li>
+		<li>'border-style'-properties allows you to choose, one from the following varios style of the border.</li>
+		<ol start="text-decorationun: underline;">
+			<li>-solid</li>
+			<li>-dotted</li>
+			<li>-dashed</li>
+			<li>-double</li>
+			<li>-groove</li>
+			<li>-inset</li>
+			<li>-uotset</li>
+		</ol>
+		<p id="p1">i.e.   border-style: solid; , border-style: dotted;</p>
+	</ul>
+
+	<h2>2.Border-Width</h2>
+	<ul>
+		<li>This property specifies the width of the border.</li>
+		<p id="p1">i.e.   border-width: 5px;</p>
+	</ul>
+
+	<h2>3.Border-Color</h2>
+	<ul>
+		<li>It specifies the color of the border.</li>
+		<p id="p1">i.e.   border-color: blue;</p>
+	</ul>
+
+	<h2>4.Border-Radius</h2>
+	<ul>
+		<li>Border-Radius makes the <span style="text-decoration: underline;">corner curved</span>.</li>
+		<p id="p1">i.e.   border-radius: 4px;</p>
+	</ul>
+
+	<h1 style="text-decoration: underline;color: red;">## INDIVIDUAL SIDE-METHOD</h1>
+	<h2 id="h">>>border-left/right/top/bottom-style/color/width/radius: value;</h2>
+	<ul>
+		<li>Only one should be choosen from 'left/right/top/bottom' and 'style/color/width/radius'</li>
+		<p id="p1">i.e.  border-left-style: dashed; , border-right-color: blue; , border-top-width: 10px; , border-bottom-radius: 3px;  etc.</p>
+	</ul>
+		
+	<h2 id="h">>>border-style/color/width/radius: value(top) value(right) value(bottom) value(left);</h2>
+	<ul>
+		<li>Only one should be choosed from 'style/color/width/radius' , Then enter the 4-values for(top,right,bottom,left).</li>
+		<p id="p1">i.e.  border-style: dashed solid dotted double; , border-color: blue green yrllow pink;  etc.</p>
+	</ul>
+	<h2 id="h">>>border-style/color/width/radius: value(top) value(right & left both) value(bottom);</h2>
+	<ul>
+		<li>Only one should be choosed from 'style/color/width/radius' , Then enter the 3-values for(top,right & left,bottom).</li>
+		<p id="p1">i.e.  border-style: dashed solid double; , border-color: blue green pink;  etc.</p>
+	</ul>
+	<h2 id="h">>>border-style/color/width/radius: value(top & bottom both) value(left & right both);</h2>
+	<ul>
+		<li>Only one should be choosed from 'style/color/width/radius' , Then enter the 2-values for(top and bottom,left and right).</li>
+		<p id="p1">i.e.  border-style: dashed double; , border-color: blue pink; , border-width: 2px 5px;  etc.</p>
+	</ul>
+	<h2 id="h">>>border-style/color/width/radius: value(one value for all);</h2>
+	<ul>
+		<li>Only one should be choosed from 'style/color/width/radius' , Then enter the 2-values for(top and bottom,left and right).</li>
+		<p id="p1">i.e.  border-style: dashed; , border-color: blue; , border-width: 5px; , border-radius: 10px;  etc.</p>
+	</ul>
+
+</body>
+</html>
